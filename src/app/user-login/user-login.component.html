@@ -1,0 +1,19 @@
+<div class="row container">
+    <div class="col-lg-3 col-md-12">
+
+    </div>
+
+    <div class="col-lg-7 col-md-12 container mt-5 mb-5">
+        <form [formGroup]="userLoginForm" action="" class="bg-light text-center p-4">
+            <h1>User Login</h1>
+            <input formControlName="email" type="text" name="email" id="n1" placeholder="email" class="form-control mt-3">
+            <input formControlName="psw" type="password" name="psw" id="psw" placeholder="PassWord" class="form-control mt-3">
+            <button (click)="userLogin()" class="btn btn-light bg-light mt-2">Login</button>
+            <a class="mt-3 ms-2" routerLink="/user-reg">Not registered Yet?</a>
+        </form>
+    </div>
+
+    <div class="col-lg-3 col-md-12">
+
+    </div>
+</div>
